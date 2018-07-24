@@ -18,7 +18,7 @@ class Arms
 			number=number/10;
 		}                         //Store the sum of cubes of digits of the number in 'sum'
 		
-		if(numbercopy==sum)       //If number is same as sum, it is armstrong, else it is not armstrong
+		if(numbercopy==sum)       //If number is equal to sum, it is armstrong, else it is not armstrong
 		System.out.println("Armstrong number");
 		else
 		System.out.println("Not an Armstrong number");	
