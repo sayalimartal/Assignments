@@ -1,22 +1,23 @@
+//To find Armstrong numbers in a given range of numbers
 import java.util.*;
 class ArmsRange
 {
 	public static void main(String args[])
 	{
-		int rem,sum=0,n;
+		int remainder,sum=0,number;
 		System.out.println("Armstrong numbers from 100 to 999 are");
-		for(int n1=100;n1<1000;n1++)
+		for(int i=100;i<1000;i++)
 		{
-				sum=0;
-				n=n1;
-				while(n>0)
+				sum=0;        //Initialise sum of cubes of digits for each number to be 0
+				number=i;     //Copy the number 
+				while(number>0)
 				{
-					rem=n%10;
-					sum=sum+(rem*rem*rem);
-					n=n/10;
-				}
-				if(n1==sum)
-				System.out.print(n1+" ");
+					remainder=number%10;
+					sum=sum+(remainder*remainder*remainder);
+					number=number/10;
+				}            //Store the sum of cubes of digits of the number in 'sum'
+				if(i==sum)   //If number is same as sum, it is armstrong, so display that number
+				System.out.print(i+" ");
 		}
 	}
 }
