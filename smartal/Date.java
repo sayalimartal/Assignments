@@ -13,22 +13,31 @@ class Date
 		
 		switch(dmy[1])                   //Display the month name according to the month number
 		{
+			case "1":
 			case "01":System.out.print("January");
 				  break;
+			case "2":
 			case "02":System.out.print("February");
 				  break;
+			case "3":
 			case "03":System.out.print("March");
 				  break;
+			case "4":
 			case "04":System.out.print("April");
 				  break;
+			case "5":
 			case "05":System.out.print("May");
 				  break;
+			case "6":
 			case "06":System.out.print("June");
 				  break;
+			case "7":
 			case "07":System.out.print("July");
 				  break;
-		        case "08":System.out.print("August");
+		        case "8":
+			case "08":System.out.print("August");
 				  break;
+			case "9":
 			case "09":System.out.print("September");
 				  break;
 		        case "10":System.out.print("October");
