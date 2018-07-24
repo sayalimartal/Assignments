@@ -1,20 +1,21 @@
+// To find if given number is an armstrong number
 import java.util.*;
 class Arms
 {
 	public static void main(String args[])
 	{
-		int n,rem,sum=0,n1;
-		Scanner sc=new Scanner(System.in);
+		int number,remainder,sum=0,numbercopy;
+		Scanner scanner=new Scanner(System.in);
 		System.out.println("Enter a number");
-		n=sc.nextInt();
-		n1=n;
-		while(n>0)
+		number=scanner.nextInt(); //Input a number
+		numbercopy=number;        //Copy the number  
+		while(number>0)
 		{
-			rem=n%10;
-			sum=sum+(rem*rem*rem);
-			n=n/10;
-		}
-		if(n1==sum)
+			remainder=number%10;
+			sum=sum+(remainder*remainder*remainder);
+			number=number/10;
+		}                         //Store the sum of cubes of digits of the number in 'sum'
+		if(numbercopy==sum)       //If number is same as sum, it is armstrong, else it is not armstrong
 		System.out.println("Armstrong number");
 		else
 		System.out.println("Not an Armstrong number");	
