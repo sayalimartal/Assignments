@@ -19,7 +19,7 @@ class ArmsRange
 					number=number/10;
 				}            //Store the sum of cubes of digits of the number in 'sum'
 			
-				if(i==sum)   //If number is same as sum, it is armstrong, so display that number
+				if(i==sum)   //If number is equal to sum, it is armstrong, so display that number
 				System.out.print(i+" ");
 		}
 	}
