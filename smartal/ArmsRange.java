@@ -4,18 +4,21 @@ class ArmsRange
 {
 	public static void main(String args[])
 	{
-		int remainder,sum=0,number;
-		System.out.println("Armstrong numbers from 100 to 999 are");
-		for(int i=100;i<1000;i++)
+		int remainder,sum=0,number,a=100,b=999;
+		
+		System.out.println("Armstrong numbers from "+a+" to "+b+" are");
+		for(int i=a;i<b+1;i++)
 		{
 				sum=0;        //Initialise sum of cubes of digits for each number to be 0
 				number=i;     //Copy the number 
+			
 				while(number>0)
 				{
 					remainder=number%10;
 					sum=sum+(remainder*remainder*remainder);
 					number=number/10;
 				}            //Store the sum of cubes of digits of the number in 'sum'
+			
 				if(i==sum)   //If number is same as sum, it is armstrong, so display that number
 				System.out.print(i+" ");
 		}
