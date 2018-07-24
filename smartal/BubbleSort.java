@@ -16,7 +16,7 @@ class BubbleSort
 		{
 			for(j=0;j<14;j++)
 			{
-				if(array[j]>array[j+1])  //Sort the array in descending order
+				if(array[j]>array[j+1])  //Sort the array in ascending order
 				{
 					swap=array[j];   
 					array[j]=array[j+1];
