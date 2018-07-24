@@ -6,10 +6,12 @@ class BubbleSort
 	{
 		int[] array=new int[15];    //Create an array of integers of size 15
 		int i,j,swap;
+		
 		Scanner scanner=new Scanner(System.in);
 		System.out.println("Enter the array elements");
 		for(i=0;i<15;i++)          //Input array elements
 			array[i]=scanner.nextInt();
+		
 		for(i=0;i<14;i++)
 		{
 			for(j=0;j<14;j++)
@@ -22,6 +24,7 @@ class BubbleSort
 				}
 			}				
 		}
+		
 		System.out.println("The sorted array is");
 		for(i=0;i<15;i++)      //Display the sorted array
 			System.out.print(array[i]+" ");
