@@ -23,8 +23,10 @@ public class SortPalindrome {
 			}
 		}
 		
-		for(i=0;i<position;i++) {
-			len[i]=str[location[i]].length();	
+		for(i=0;i<position;i++) 
+			len[i]=str[location[i]].length();
+		for(i=0;i<position;i++)
+		{	
 			for(j=0;j<position-1;j++)
 			{
 				if(len[j]<len[j+1])
