@@ -1,13 +1,16 @@
+//Calculate income tax based on income range
 import java.util.*;
-class IncTax
+
+class IncomeTax
 {
 	public static void main(String args[])
 	{
 		double ctc,tax=0;
-		Scanner sc=new Scanner(System.in);
+		Scanner scanner=new Scanner(System.in);
 		System.out.println("Enter the CTC");
-		ctc=sc.nextDouble();
-		if(ctc>=0 && ctc<=180000)
+		ctc=scanner.nextDouble();  //Input ctc
+		
+		if(ctc>=0 && ctc<=180000)  //Calculate tax based on ctc
 		tax=0;
 		else if(ctc>=180001 && ctc<=300000)
 		tax=ctc*10/100;
@@ -17,7 +20,8 @@ class IncTax
 		tax=ctc*30/100;
 		else
 		System.out.println("Invalid Input");
-		if(ctc>=0 && ctc<=1000000)
+		
+		if(ctc>=0 && ctc<=1000000)  //Display tax amount for valid ctc input
 		System.out.println("Tax amount is "+tax);
 	}
 }
