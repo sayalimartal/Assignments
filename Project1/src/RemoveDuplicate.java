@@ -16,12 +16,12 @@ public class RemoveDuplicate {
 			for(j=i+1;j<len;j++)
 			{
 				if(c==str[j]) 
-				str[j]=' ';
+					str[j]=' '; //Replace all repeated characters with spaces
 			}
 		}
 		
 		String string=new String(str);
-		string=string.replaceAll(" ","");
+		string=string.replaceAll(" ","");  //Remove all spaces
 		System.out.println("String with duplicate characters removed is "+string);
 	}
 }
