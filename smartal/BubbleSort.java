@@ -1,20 +1,22 @@
 //To sort an array using Bubblesort technique
 import java.util.*;
+
 class BubbleSort
 {
 	public static void main(String args[])
 	{
-		int[] array=new int[15];    //Create an array of integers of size 15
+		int length=15;
+		int[] array=new int[length];    //Create an array of integers 
 		int i,j,swap;
 		
 		Scanner scanner=new Scanner(System.in);
 		System.out.println("Enter the array elements");
-		for(i=0;i<15;i++)          //Input array elements
+		for(i=0;i<length;i++)          //Input array elements
 			array[i]=scanner.nextInt();
 		
-		for(i=0;i<14;i++)
+		for(i=0;i<length-1;i++)
 		{
-			for(j=0;j<14;j++)
+			for(j=0;j<length-i-1;j++)
 			{
 				if(array[j]>array[j+1])  //Sort the array in ascending order
 				{
@@ -26,7 +28,7 @@ class BubbleSort
 		}
 		
 		System.out.println("The sorted array is");
-		for(i=0;i<15;i++)      //Display the sorted array
+		for(i=0;i<length;i++)      //Display the sorted array
 			System.out.print(array[i]+" ");
 	}
 }
