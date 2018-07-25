@@ -1,22 +1,24 @@
+//Declare result based on marks
 import java.util.*;
+
 class Marks
 {
 	public static void main(String args[])
 	{
-		int m1,m2,m3;
-		Scanner sc=new Scanner(System.in);
+		int mark1,mark2,mark3;
+		Scanner scanner=new Scanner(System.in);
 		System.out.println("Enter the marks for three subjects");
-		m1=sc.nextInt();
-		m2=sc.nextInt();
-		m3=sc.nextInt();
+		mark1=scanner.nextInt(); //Input marks for three subjects
+		mark2=scanner.nextInt();
+		mark3=scanner.nextInt();
+		
 		System.out.print("Result is ");
-		if(m1>=60 && m2>=60 && m3>=60)
+		
+		if(mark1>=60 && mark2>=60 && mark3>=60) //Display result based on marks
 		System.out.println("Passed");
-		else if((m1>=60 && m2>=60 && m3<60) || (m1>=60 && m3>=60 && m2<60) || (m2>=60 && m3>=60 && m1<60))
+		else if((mark1>=60 && mark2>=60 && mark3<60) || (mark1>=60 && mark3>=60 && mark2<60) || (mark2>=60 && mark3>=60 && mark1<60))
 		System.out.println("Promoted");
 		else
 		System.out.println("Failed");
 	}
-}
-	
-		
+}		
