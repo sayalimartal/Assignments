@@ -1,17 +1,21 @@
+//Calculate square of a number using a function
 import java.util.*;
+
 class Square
 {
 	public static void main(String args[])
 	{
-		Scanner sc=new Scanner(System.in);
+		Scanner scanner=new Scanner(System.in);
 		System.out.println("Enter a number");
-		int i=sc.nextInt();
-		int s=sq(i);
-		System.out.println(i+"*1="+i+", Square:"+s);
+		int number=scanner.nextInt(); //Input a number
+		
+		int square=square(number); //Pass number to square function
+		System.out.println(number+"*1="+number+", Square:"+square); //Display square value
 	}
-	public static int sq(int i)
+	
+	public static int square(int num)
 	{
-		int s=i*i;
-		return s;
+		int square=num*num;   //Calculate square value
+		return square;
 	}
 }
