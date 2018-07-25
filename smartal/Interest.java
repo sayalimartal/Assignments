@@ -11,10 +11,10 @@ class Interest
 		double n=scanner.nextDouble();
 		double r=scanner.nextDouble();
 		
-		double si=(p*n*r)/100;   //Calculate simple interest
-		double ci=(p*Math.pow(1+(r/100),n))-p;   //Calculate compound interest
+		double simpleInterest=(p*n*r)/100;   //Calculate simple interest
+		double compoundInterest=(p*Math.pow(1+(r/100),n))-p;   //Calculate compound interest
 		
-		System.out.println("Simple interest is "+si);  //Display simple interest
-		System.out.println("Compound interest is "+ci);//Display compound interest
+		System.out.println("Simple interest is "+simpleInterest);  //Display simple interest
+		System.out.println("Compound interest is "+compoundInterest);//Display compound interest
 	}
 }
