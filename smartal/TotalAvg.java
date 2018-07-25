@@ -24,7 +24,7 @@ class TotalAvg
 			for(j=0;j<3;j++)
 			total[i]+=mark[j][i];
 			System.out.print(total[i]+" ");  //Display total scored in each subject by 3 students
-			avg[i]=total[i]/3;
+			avg[i]=total[i]/3.0f;
 		}
 		
 		System.out.print("\nAverage scored in each subject is ");
@@ -40,7 +40,7 @@ class TotalAvg
 			for(j=0;j<3;j++)
 			totalStudent[i]+=mark[i][j];
 			System.out.print(totalStudent[i]+" ");  //Display total scored by each student
-			avgStudent[i]=totalStudent[i]/3;
+			avgStudent[i]=totalStudent[i]/3.0f;
 		}
 		
 		System.out.print("\nAverage scored by each student is ");
