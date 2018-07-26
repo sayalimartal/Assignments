@@ -1,3 +1,4 @@
+//Single level inheritance with constructor invocation
 class A {
 	A(){
 		System.out.println("In parent class");
