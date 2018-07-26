@@ -1,11 +1,11 @@
-
+//Function overloading using different parameter types in parent and child classes
 class Parent{                       //Parent class
-	void display(String name) { 
+	void display(String name) { //Parameter is of type 'String'
 		System.out.println("Hello "+name+". Welcome to parent class");
 	}
 }
 class Child extends Parent{        //Child class
-	void display(int i) {      
+	void display(int i) {      //Parameter is of type 'int'
 		System.out.println("Child class "+i);
 	}
 }
